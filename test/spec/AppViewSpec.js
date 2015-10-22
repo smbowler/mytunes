@@ -2,7 +2,7 @@ describe('AppView', function() {
   var appView, app;
 
   beforeEach(function () {
-    app = new AppModel({library:
+    app = new AppModel({ library:
       new Songs([
         {
           artist: 'Fakey McFakerson',
@@ -16,7 +16,7 @@ describe('AppView', function() {
         }
       ])
     });
-    appView = new AppView({model: app});
+    appView = new AppView({ model: app });
   });
 
   it('should generate a PlayerView when created', function(){

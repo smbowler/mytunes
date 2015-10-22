@@ -17,11 +17,15 @@
     <script src="views/PlayerView.js"></script>
     <script src="views/LibraryView.js"></script>
     <script src="views/LibraryEntryView.js"></script>
+    <script src="views/SongQueueView.js"></script>
+    <script src="views/SongQueueEntryView.js"></script>
     <script src="views/AppView.js"></script>
 
     <script>
+        //Document ready function provides closure for all subsequent functions. Cann't reach it from the console.
       $(function(){
         // set up model objects
+        //setting variable library as the Song Collection, which contains models of songData
         var library = new Songs(songData);
         var app = new AppModel({library: library});
 
